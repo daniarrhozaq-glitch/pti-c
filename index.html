@@ -61,3 +61,268 @@
     </footer>
 </body>
 </html>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body.halaman-utama {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigasi */
+.bilah-navigasi {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.kontainer-navigasi {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+.logo-toko {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.menu-navigasi {
+    display: none;
+    gap: 1.5rem;
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .menu-navigasi {
+        display: flex;
+    }
+}
+
+.tautan-navigasi {
+    color: #374151;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.tautan-navigasi:hover {
+    color: #2563eb;
+}
+
+.tautan-aktif {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.tombol-keluar {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #4b5563;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.tombol-keluar:hover {
+    color: #ef4444;
+}
+
+/* Section Banner */
+.bagian-banner {
+    max-width: 80rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.kartu-banner {
+    background: linear-gradient(to right, #2563eb, #4338ca);
+    border-radius: 1rem;
+    padding: 2rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+@media (min-width: 768px) {
+    .kartu-banner {
+        flex-direction: row;
+        padding: 3rem;
+    }
+}
+
+.konten-banner {
+    margin-bottom: 1.5rem;
+    max-width: 32rem;
+}
+
+@media (min-width: 768px) {
+    .konten-banner {
+        margin-bottom: 0;
+    }
+}
+
+.label-promo {
+    background-color: rgba(59, 130, 246, 0.4);
+    color: #dbeafe;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    text-transform: uppercase;
+}
+
+.judul-banner {
+    font-size: 1.875rem;
+    font-weight: 800;
+    line-height: 1.25;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .judul-banner {
+        font-size: 3rem;
+    }
+}
+
+.deskripsi-banner {
+    color: #dbeafe;
+    margin-bottom: 1rem;
+}
+
+.tombol-utama {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #2563eb;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+}
+
+.tombol-utama:hover {
+    background-color: #eff6ff;
+}
+
+.gambar-banner {
+    width: 16rem;
+    height: 16rem;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Produk Unggulan */
+.bagian-produk {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.judul-bagian {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+}
+
+.kisi-produk {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .kisi-produk {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .kisi-produk {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+.kartu-produk {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    padding: 1rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s;
+}
+
+.kartu-produk:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.gambar-produk {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.nama-produk {
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.harga-produk {
+    color: #2563eb;
+    font-weight: 800;
+    margin-top: 0.5rem;
+}
+
+.tombol-detail {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 0.5rem 0;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.tombol-detail:hover {
+    background-color: #1d4ed8;
+}
+
+/* Footer */
+.bagian-footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    padding: 1.5rem 0;
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-top: auto;
+}
