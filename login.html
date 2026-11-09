@@ -7,34 +7,34 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="login-container">
-        <div class="login-header">
-            <h1>TokoKita</h1>
-            <p>Selamat datang kembali! Silakan login.</p>
+<body class="halaman-login">
+    <div class="kontainer-login">
+        <div class="header-login">
+            <h1 class="logo-toko-login">TokoKita</h1>
+            <p class="subjudul-login">Selamat datang kembali! Silakan login.</p>
         </div>
         
         <!-- Form Login -->
-        <form id="loginForm">
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" required placeholder="Masukkan username">
+        <form id="loginForm" class="formulir-login">
+            <div class="grup-input">
+                <label for="username" class="label-input">Username</label>
+                <input type="text" id="username" class="field-input" required placeholder="Masukkan username">
             </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" required placeholder="Masukkan password">
+            <div class="grup-input">
+                <label for="password" class="label-input">Password</label>
+                <input type="password" id="password" class="field-input" required placeholder="Masukkan password">
             </div>
             
-            <!-- Pesan Error / Gagal Login (Sesuai Ketentuan) -->
-            <p id="error-message" class="error-text" style="color: red; display: none; margin-bottom: 10px;"></p>
+            <!-- Pesan Error / Gagal Login -->
+            <p id="error-message" class="pesan-error"></p>
 
-            <button type="submit" class="btn-submit">
+            <button type="submit" class="tombol-login">
                 Masuk Ke Akun
             </button>
         </form>
     </div>
 
-    <!-- JavaScript Eksternal (Opsional untuk nilai tambah, sesuai ketentuan) -->
+    <!-- JavaScript Eksternal -->
     <script src="script.js"></script>
 </body>
 </html>
