@@ -4,61 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beranda - TokoKita</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>body { font-family: 'Inter', sans-serif; }</style>
 </head>
-<body class="bg-gray-50 flex flex-col min-h-screen">
-    <!-- Navbar -->
-    <nav class="bg-white border-b sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
-            <a href="index.html" class="text-2xl font-extrabold text-blue-600">TokoKita</a>
-            <div class="hidden md:flex space-x-6 font-medium text-gray-700">
-                <a href="index.html" class="text-blue-600">Beranda</a>
-                <a href="katalog.html" class="hover:text-blue-600">Katalog</a>
-                <a href="detail.html" class="hover:text-blue-600">Detail Produk</a>
-                <a href="keranjang.html" class="hover:text-blue-600">Keranjang</a>
-                <a href="checkout.html" class="hover:text-blue-600">Checkout</a>
+<body class="halaman-utama">
+    <!-- Navigasi Utama -->
+    <nav class="bilah-navigasi">
+        <div class="kontainer-navigasi">
+            <a href="index.html" class="logo-toko">TokoKita</a>
+            <div class="menu-navigasi">
+                <a href="index.html" class="tautan-aktif">Beranda</a>
+                <a href="katalog.html" class="tautan-navigasi">Katalog</a>
+                <a href="detail.html" class="tautan-navigasi">Detail Produk</a>
+                <a href="keranjang.html" class="tautan-navigasi">Keranjang</a>
+                <a href="checkout.html" class="tautan-navigasi">Checkout</a>
             </div>
-            <a href="login.html" class="text-sm font-semibold text-gray-600 hover:text-red-500">Keluar</a>
+            <a href="login.html" class="tombol-keluar">Keluar</a>
         </div>
     </nav>
 
-    <!-- Banner Hero -->
-    <section class="max-w-7xl mx-auto px-4 my-8 w-full">
-        <div class="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-8 md:p-12 text-white flex flex-col md:flex-row items-center justify-between shadow-xl">
-            <div class="mb-6 md:mb-0 space-y-4 max-w-lg">
-                <span class="bg-blue-500/40 text-blue-100 text-xs font-bold px-3 py-1 rounded-full uppercase">Promo Spesial</span>
-                <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Diskon Hingga 50% Untuk Produk Pilihan!</h1>
-                <p class="text-blue-100">Dapatkan penawaran terbaik minggu ini sebelum kehabisan.</p>
-                <a href="katalog.html" class="inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-bold shadow-md hover:bg-blue-50 transition">Belanja Sekarang</a>
+    <!-- Banner Utam / Promo -->
+    <section class="bagian-banner">
+        <div class="kartu-banner">
+            <div class="konten-banner">
+                <span class="label-promo">Promo Spesial</span>
+                <h1 class="judul-banner">Diskon Hingga 50% Untuk Produk Pilihan!</h1>
+                <p class="deskripsi-banner">Dapatkan penawaran terbaik minggu ini sebelum kehabisan.</p>
+                <a href="katalog.html" class="tombol-utama">Belanja Sekarang</a>
             </div>
-            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" class="w-64 h-64 object-cover rounded-xl shadow-lg" alt="Promo">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" class="gambar-banner" alt="Promo">
         </div>
     </section>
 
     <!-- Produk Unggulan -->
-    <section class="max-w-7xl mx-auto px-4 py-6 w-full flex-grow">
-        <h2 class="text-2xl font-bold mb-6 text-gray-800">Produk Unggulan</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="bg-white rounded-xl shadow-sm border p-4 hover:shadow-md transition">
-                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400" class="w-full h-48 object-cover rounded-lg mb-4" alt="Headphone">
-                <h3 class="font-bold text-gray-800">Headphone Wireless</h3>
-                <p class="text-blue-600 font-extrabold mt-2">Rp 750.000</p>
-                <a href="detail.html" class="mt-4 block text-center bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm font-semibold">Lihat Detail</a>
+    <section class="bagian-produk">
+        <h2 class="judul-bagian">Produk Unggulan</h2>
+        <div class="kisi-produk">
+            <div class="kartu-produk">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400" class="gambar-produk" alt="Headphone">
+                <h3 class="nama-produk">Headphone Wireless</h3>
+                <p class="harga-produk">Rp 750.000</p>
+                <a href="detail.html" class="tombol-detail">Lihat Detail</a>
             </div>
-            <div class="bg-white rounded-xl shadow-sm border p-4 hover:shadow-md transition">
-                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400" class="w-full h-48 object-cover rounded-lg mb-4" alt="Kamera">
-                <h3 class="font-bold text-gray-800">Kamera Retro Minimalis</h3>
-                <p class="text-blue-600 font-extrabold mt-2">Rp 2.450.000</p>
-                <a href="detail.html" class="mt-4 block text-center bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm font-semibold">Lihat Detail</a>
+            <div class="kartu-produk">
+                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400" class="gambar-produk" alt="Kamera">
+                <h3 class="nama-produk">Kamera Retro Minimalis</h3>
+                <p class="harga-produk">Rp 2.450.000</p>
+                <a href="detail.html" class="tombol-detail">Lihat Detail</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-white border-t py-6 text-center text-gray-500 text-sm mt-auto">
+    <!-- Catatan Kaki / Footer -->
+    <footer class="bagian-footer">
         &copy; 2026 TokoKita. Hak Cipta Dilindungi.
     </footer>
 </body>
