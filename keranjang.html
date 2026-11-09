@@ -7,68 +7,69 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-brand">TokoKita</a>
-            <div class="nav-menu">
-                <a href="index.html">Beranda</a>
-                <a href="katalog.html">Katalog</a>
-                <a href="detail.html">Detail Produk</a>
-                <a href="keranjang.html" class="active">Keranjang</a>
-                <a href="checkout.html">Checkout</a>
+<body class="halaman-keranjang">
+    <!-- Navigasi Utama -->
+    <nav class="bilah-navigasi">
+        <div class="kontainer-navigasi">
+            <a href="index.html" class="logo-toko">TokoKita</a>
+            <div class="menu-navigasi">
+                <a href="index.html" class="tautan-navigasi">Beranda</a>
+                <a href="katalog.html" class="tautan-navigasi">Katalog</a>
+                <a href="detail.html" class="tautan-navigasi">Detail Produk</a>
+                <a href="keranjang.html" class="tautan-aktif">Keranjang</a>
+                <a href="checkout.html" class="tautan-navigasi">Checkout</a>
             </div>
-            <a href="login.html" class="nav-logout">Keluar</a>
+            <a href="login.html" class="tombol-keluar">Keluar</a>
         </div>
     </nav>
 
-    <div class="main-container">
-        <h1 class="page-title">Keranjang Belanja</h1>
+    <div class="kontainer-utama">
+        <h1 class="judul-halaman">Keranjang Belanja</h1>
         
-        <div class="cart-grid">
-            <div class="cart-items">
-                <div class="cart-card">
-                    <div class="item-info">
-                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=100" class="item-img" alt="Headphone">
+        <div class="kisi-keranjang">
+            <div class="daftar-item-keranjang">
+                <div class="kartu-item-keranjang">
+                    <div class="informasi-item">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=100" class="gambar-item" alt="Headphone">
                         <div>
-                            <h4>Headphone Wireless</h4>
+                            <h4 class="nama-item">Headphone Wireless</h4>
                             <!-- Harga satuan diberi atribut data-price -->
-                            <p class="item-price" data-price="750000">Rp 750.000</p>
+                            <p class="harga-item" data-price="750000">Rp 750.000</p>
                         </div>
                     </div>
-                    <div class="item-action">
+                    <div class="aksi-item">
                         <!-- Input jumlah barang -->
-                        <input type="number" id="qty" value="1" min="1" class="qty-input">
-                        <button class="btn-delete">Hapus</button>
+                        <input type="number" id="qty" value="1" min="1" class="input-jumlah">
+                        <button class="tombol-hapus">Hapus</button>
                     </div>
                 </div>
             </div>
 
             <!-- Ringkasan Harga -->
-            <div class="summary-card">
-                <h3>Ringkasan Pesanan</h3>
-                <div class="summary-row">
+            <div class="kartu-ringkasan">
+                <h3 class="judul-ringkasan">Ringkasan Pesanan</h3>
+                <div class="baris-ringkasan">
                     <span>Subtotal</span>
                     <span id="subtotal">Rp 750.000</span>
                 </div>
-                <div class="summary-row">
+                <div class="baris-ringkasan">
                     <span>Pengiriman</span>
                     <span id="shipping">Rp 20.000</span>
                 </div>
-                <hr>
-                <div class="summary-row total-row">
+                <hr class="pemisah-ringkasan">
+                <div class="baris-ringkasan baris-total">
                     <span>Total</span>
-                    <span id="total" class="total-price">Rp 770.000</span>
+                    <span id="total" class="harga-total">Rp 770.000</span>
                 </div>
-                <a href="checkout.html" class="btn-checkout">
+                <a href="checkout.html" class="tombol-checkout">
                     Lanjut ke Checkout
                 </a>
             </div>
         </div>
     </div>
 
-    <footer class="footer">
+    <!-- Catatan Kaki / Footer -->
+    <footer class="bagian-footer">
         &copy; 2026 TokoKita. Hak Cipta Dilindungi.
     </footer>
 
