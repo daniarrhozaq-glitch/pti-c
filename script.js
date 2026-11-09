@@ -1,17 +1,18 @@
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Mencegah form reload langsung
+document.getElementById('loginForm').addEventListener('submit', function(kejadian) {
+    kejadian.preventDefault(); // Mencegah halaman memuat ulang secara otomatis
 
-    const inputUsername = document.getElementById('username').value;
-    const inputPassword = document.getElementById('password').value;
-    const errorMessage = document.getElementById('error-message');
+    // Mengambil nilai dari input formulir
+    const teksPengguna = document.getElementById('username').value;
+    const kataKunci = document.getElementById('password').value;
+    const pesanKesalahan = document.getElementById('error-message');
 
-    // Pengecekan sesuai ketentuan TR
-    if (inputUsername === 'admin' && inputPassword === 'admin123') {
-        // Jika benar, masuk ke halaman utama (ganti 'index.html' dengan file halaman utama Anda)
+    // Pemeriksaan kata kunci dan nama pengguna
+    if (teksPengguna === 'admin' && kataKunci === 'admin123') {
+        // Jika data benar, arahkan ke halaman utama
         window.location.href = 'index.html';
     } else {
-        // Jika salah, tampilkan pesan bahwa login gagal
-        errorMessage.textContent = 'Login gagal! Username atau password salah.';
-        errorMessage.style.display = 'block';
+        // Jika data salah, tampilkan pesan peringatan
+        pesanKesalahan.textContent = 'Login gagal! Username atau password salah.';
+        pesanKesalahan.style.display = 'block';
     }
 });
