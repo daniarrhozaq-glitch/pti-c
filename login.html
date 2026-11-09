@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TokoKita</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <h1>TokoKita</h1>
+            <p>Selamat datang kembali! Silakan login.</p>
+        </div>
+        
+        <!-- Form Login -->
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" required placeholder="Masukkan username">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required placeholder="Masukkan password">
+            </div>
+            
+            <!-- Pesan Error / Gagal Login (Sesuai Ketentuan) -->
+            <p id="error-message" class="error-text" style="color: red; display: none; margin-bottom: 10px;"></p>
+
+            <button type="submit" class="btn-submit">
+                Masuk Ke Akun
+            </button>
+        </form>
+    </div>
+
+    <!-- JavaScript Eksternal (Opsional untuk nilai tambah, sesuai ketentuan) -->
+    <script src="script.js"></script>
+</body>
+</html>
